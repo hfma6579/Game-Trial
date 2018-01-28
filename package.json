@@ -1,0 +1,12 @@
+{
+  "name": "testing_code",
+  "version": "1.0.0",
+  "dependencies": {
+    "jade": "1.11.0",
+    "express": "4.16.2"
+  },
+  "description": "N/A",
+  "main": "app.js",
+  "devDependencies": {},
+  "author": "E_M"
+}
