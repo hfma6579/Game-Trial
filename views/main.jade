@@ -1,6 +1,42 @@
 doctype html5
 html
     head
+        script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+        script(src="main.js")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
     body
-        div.content
-            = "Hello World!"
+        div.Content
+            table.Tic_Tac_Toe(border=1, style="height:60%;width:60%;")
+                tr
+                    th.entry#0_0(style="height:30%;width:30%;", icon="none")
+                    
+                    th.entry#0_1(style="height:30%;width:30%;", icon="none")
+                    
+                    th.entry#0_2(style="height:30%;width:30%;", icon="none")
+
+                tr
+                    th.entry#1_0(style="height:30%;width:30%;", icon="none")
+                    
+                    th.entry#1_1(style="height:30%;width:30%;", icon="none")
+                    
+                    th.entry#1_2(style="height:30%;width:30%;", icon="none")
+                    
+                tr
+                    th.entry#2_0(style="height:30%;width:30%;", icon="none")
+                    
+                    th.entry#2_1(style="height:30%;width:30%;", icon="none")
+                    
+                    th.entry#2_2(style="height:30%;width:30%;", icon="none")
+            button(style="font-size:24px").reset
+                = "Reset"
+            hr
+            div.player(activePlayer="player1")
+                table(style="height:10%;width:60%;")
+                    tr
+                        th.player1(style="border:1px solid black;")
+                            ="player 1"
+                        th.player2
+                            ="player 2"
+            hr
+            div.winner
+                    

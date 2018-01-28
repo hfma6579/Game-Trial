@@ -8,6 +8,8 @@ app.get('/', function(req, res){
     res.render('main');
 });
 
+app.use(express.static('public'));
+
 app.listen(1234, function(){
     console.log("Success.");
 })
